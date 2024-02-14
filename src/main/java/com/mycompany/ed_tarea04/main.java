@@ -36,11 +36,18 @@ public class main {
             System.out.println("Error al recargar");
 
         }
+               try {
+                    System.out.println(" Modificación 1");
+                     cesta.Actualizarbono(-50);
+                 } catch (Exception e) {
+                           System.out.print("Fallo…….");
+                            }
+
 
         double bonoactual = cesta.bonificacion();
 
         System.out.println("Su bono actual es  " + bonoactual);
     }
     
-
+ 
 }
